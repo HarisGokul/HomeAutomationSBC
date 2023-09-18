@@ -1,0 +1,24 @@
+Router>enable
+Router#conf terminal
+Router(config)#hostname ISP
+
+ISP(config)#int gigabitEthernet 0/0/0
+ISP(config-if)#ip address 42.169.69.1 255.255.255.0
+ISP(config-if)#no shutdown
+ISP(config-if)#exit
+
+ISP(config)#int gig
+ISP(config)#int gigabitEthernet 0/0/1
+ISP(config-if)#ip address 169.69.42.1 255.255.255.0
+ISP(config-if)#no shutdown
+	
+ISP(config)#ip dhcp pool homes
+ISP(dhcp-config)#network 42.169.69.0 255.255.255.0
+ISP(dhcp-config)#default-router 42.169.69.1
+ISP(dhcp-config)#exit
+
+ISP(config)#ip dhcp pool cellTowers
+ISP(dhcp-config)#network 169.69.42.0 255.255.255.0
+ISP(dhcp-config)#default-router 169.69.42.1
+ISP(dhcp-config)#exit
+
