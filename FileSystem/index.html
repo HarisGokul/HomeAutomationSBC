@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Configuration</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/index.js">
+    </script>
+</head>
+<body>
+    <header>
+        <h2>SBC IoT Device Configuration</h2>
+    </header>
+    <div id="info">
+        <div>
+            <label for="deviceName">Name :</label> <input id="deviceName" type="text" value="">
+        </div>
+        <button onclick="submit()">submit</button> 
+    </div>
+    <div id="templateForm" hidden>
+        <form>
+            <div>
+                <label for="deviceType">Device Type:</label>
+                <select id="deviceType" name="deviceType"></select>
+            </div>
+            <div>
+                <label for="name">Device Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div>
+                <label for="pin">PIN: </label>
+                <select id="pin" name="pin" onclick="getAvailable(this)" onchange="unallocate(this)"  onfocus="this.__data_previous = this.value"></select>
+            </div>
+            <button type="button" id="delete" onclick="remove(this.parentElement)">-</button>
+        </form>
+    </div>
+    <div id="forms">
+
+    </div>
+    <button id="addButton" onclick="addEmpty()" disabled>ADD</button>
+</body>
+</html>

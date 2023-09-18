@@ -1,0 +1,217 @@
+{
+  "AC": {
+    "defaultState": "0",
+    "config": {
+      "name": "AC",
+      "type": "bool",
+      "controllable": true
+    },
+    "readable": false
+  },
+  "Alarm": {
+    "defaultState": "0",
+    "readable": false,
+    "config": {
+      "name": "Alarm",
+      "type": "bool",
+      "controllable": true
+    }
+  },
+  "Appliance": {
+    "defaultState": "0",
+    "config": {
+      "name": "Appliance",
+      "type": "bool",
+      "controllable": true
+    },
+    "readable": false
+  },
+  "Battery": {
+    "defaultState": "0",
+    "config": {
+      "name": "Battery",
+      "type": "number",
+      "unit": "%",
+      "controllable": false
+    },
+    "readable": true
+  },
+  "Ceiling Fan": {
+    "defaultState": "0",
+    "config": {
+      "name": "Ceiling Fan",
+      "type": "options",
+      "options": {
+        "0": "Off",
+        "1": "Low",
+        "2": "High"
+      },
+      "controllable": true
+    },
+    "readable": false
+  },
+  "Fire Monitor": {
+    "defaultState": "0",
+    "readable": true,
+    "config": {
+      "name": "Status",
+      "type": "bool",
+      "controllable": false
+    }
+  },
+  "Garage Door": {
+    "defaultState": "0",
+    "config": {
+      "name": "Garage Door",
+      "type": "bool",
+      "controllable": true
+    },
+    "readable": false
+  },
+  "Home Speaker": {
+    "defaultState": "0",
+    "config": {
+      "name": "Home Speaker",
+      "type": "number",
+      "controllable": true
+    },
+    "readable": false
+  },
+  "Humdifier": {
+    "defaultState": "0",
+    "readable": false,
+    "config": {
+      "name": "Status",
+      "type": "bool",
+      "controllable": true
+    }
+  },
+  "Humidity Sensor": {
+    "defaultState": "0",
+    "readable": true,
+    "config": {
+      "name": "Humidity",
+      "type": "number",
+      "unit": "%",
+      "controllable": false
+    }
+  },
+  "Light": {
+    "defaultState": "0",
+    "readable": false,
+    "config": {
+      "name": "Light",
+      "type": "options",
+      "options": {
+        "0": "Off",
+        "1": "Dim",
+        "2": "On"
+      },
+      "controllable": true
+    }
+  },
+  "Lock": {
+    "defaultState": "0",
+    "config": {
+      "name": "Lock",
+      "type": "options",
+      "options": {
+        "0": "Unlock",
+        "1": "Lock"
+      },
+      "controllable": true
+    },
+    "readable": false
+  },
+  "Motion Detector": {
+    "defaultState": "0",
+    "readable": true,
+    "config": {
+      "name": "Motion Detector",
+      "type": "bool",
+      "controllable": false
+    }
+  },
+  "Rocker Switch": {
+    "defaultState": "0",
+    "readable": true,
+    "config": {
+      "name": "Status",
+      "type": "bool",
+      "controllable": false
+    }
+  },
+  "Siren": {
+    "defaultState": "0",
+    "readable": false,
+    "config": {
+      "name": "On",
+      "type": "bool",
+      "controllable": true
+    }
+  },
+  "Smoke Detector": {
+    "defaultState": "0",
+    "readable": true,
+    "config": {
+      "name": "Level",
+      "type": "number",
+      "controllable": false
+    }
+  },
+  "Solar Panel": {
+    "defaultState": "0",
+    "readable": true,
+    "config": {
+      "name": "Status",
+      "type": "number",
+      "unit": "Wh",
+      "controllable": false
+    }
+  },
+  "Sprinkler": {
+    "defaultState": "0",
+    "readable": false,
+    "config": {
+      "name": "Status",
+      "type": "bool",
+      "controllable": true
+    }
+  },
+  "Trip Sensor": {
+    "defaultState": "0",
+    "readable": true,
+    "config": {
+      "name": "Status",
+      "type": "bool",
+      "controllable": false
+    }
+  },
+  "WaterDrain": {
+    "defaultState": "0",
+    "readable": false,
+    "config": {
+      "name": "Status",
+      "type": "bool",
+      "controllable": true
+    }
+  },
+  "Wind Detector": {
+    "defaultState": "0",
+    "readable": true,
+    "config": {
+      "name": "Status",
+      "type": "bool",
+      "controllable": false
+    }
+  },
+  "Window": {
+    "defaultState": "0",
+    "readable": false,
+    "config": {
+      "name": "Status",
+      "type": "bool",
+      "controllable": true
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "deviceID":"SBC",
+    "devices" : {
+        "Light":{
+            "deviceType":"Light",
+            "defaultState" : "0",
+            "config":{
+                "name": "Light",
+                "type": "bool",
+                "controllable": true
+            },
+            "readable":false,
+            "currentState" : "0",
+            "pin":"0"
+        },
+        "Ceiling Fan":{
+            "deviceType":"Ceiling Fan",
+            "defaultState" : "0",
+            "currentState" : "0",
+            "readable":false,
+            "pin":"1",
+            "config":{
+                "name": "Fan",
+                "type": "options",
+                "options": {
+                    "0": "Off",
+                    "1": "Low",
+                    "2": "High"
+                },
+                "controllable": true
+            }
+        },
+        "Motion Detector":{
+            "deviceType":"Motion Detector",
+            "defaultState" : "0",
+            "readable": true,
+            "pin":"2",
+            "currentState" : "0",
+            "config":{
+                "name": "MotionDetector",
+                "type": "number",
+                "controllable": false
+            }
+        }
+    }
+}
